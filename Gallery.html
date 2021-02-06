@@ -3,45 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="icon" href="https://data.apksum.com/cb/com.jetfuel.colormeme/10.0/icon.png" >
+    <style>
+        div.row{
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        body {
+            background-image: url("https://www.seekpng.com/png/full/100-1009902_star-background-png.png");
+        }
+
+        .container + img {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #0077ff;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        a div:hover{
+            text-decoration: underline;
+        }
+
+        .center , div h1,div p{
+            display: block;
+            margin-left:  auto;
+            margin-right:  auto;
+            margin-top:5%;
+            margin-bottom:5%;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            overflow: hidden;
+            background-color: rgb(24, 24, 24);
+            border: rgb(0, 0, 0) solid 3px;
+            position: fixed;
+            z-index: 9999;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+            font-size: 15px;
+            border-right:1px white solid ;
+            
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            display: block;
+            padding: 14px 16px;
+            transition: .5s ease;
+            background-color: #555555;
+            color:white;
+        }
+        footer{
+            background-color: black;
+            font-size: 8px;
+            color: white;
+            padding: 8px;
+        }
+    </style>
 
     <title>Memes Gallery</title>
 </head>
-<body>
+<body style="background-color:lightblue;">
+        <nav>
+            <ul>
+                <li style="border-left:1px white solid"><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li style="float:right; border-left:1px white solid"><a href="#about">About</a></li>
+            </ul>
+        </nav>
         <div class="container">
-            <div class="jumbotron">
-                <h1> Memes Gallery</h1>
-                <p> memes from all over the internet</p>
+            <div class="jumbotron row">
+                <div class="col-md-4 col-sm-4 col-md-6 col-sm-6">
+                    <img  class="img-circle shadow-lg center" src="https://data.apksum.com/cb/com.jetfuel.colormeme/10.0/icon.png" alt="Icon" >
+                </div>
+                <div class="col-md-4 col-sm-4 col-md-6 col-sm-6">
+                    <h1 style="font-family:'Sriracha';"> Memes Gallery</h1>
+                    <p style="font-family:'Sriracha';"><u><b>memes from all over the internet</u></b></p>
+                </div>
+                
             </div>
+            
         </div>
+        
         <div class="row">
-            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6"> 
-                <img class="img-thumbnail" src="https://i.pinimg.com/736x/4d/8e/cc/4d8ecc6967b4a3d475be5c4d881c4d9c.jpg" >
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://i.pinimg.com/736x/4d/8e/cc/4d8ecc6967b4a3d475be5c4d881c4d9c.jpg" >
+                <div class="overlay">
+                    <a href="https://www.instagram.com/smudge_lord/">
+                        <div class="text">Smudge the cat</div>
+                    </a>
+                </div>
             </Div>
-            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6"> 
-                <img class="img-thumbnail" src="https://images.news18.com/ibnlive/uploads/2020/12/1608283411_untitled-design-1.png" >
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://images.news18.com/ibnlive/uploads/2020/12/1608283411_untitled-design-1.png" >
+                <div class="overlay">
+                    <a href="https://www.youtube.com/watch?v=j9V78UbdzWI&ab_channel=DigiNeko">
+                        <div class="text">Coffin dance</div>
+                    </a>
+                </div>
             </Div>
-            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6"> 
-                <img class="img-thumbnail" src="https://i.kym-cdn.com/entries/icons/original/000/001/965/Morshu_-_Original__HD_1080__0-5_screenshot.png" >
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://i.kym-cdn.com/entries/icons/facebook/000/029/959/Screen_Shot_2019-06-05_at_1.26.32_PM.jpg">
+                <div class="overlay">
+                    <a href="https://knowyourmeme.com/memes/stonks">
+                        <div class="text">Stonks</div>
+                    </a>
+                </div>
             </Div>
-            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6"> 
-                <img class="img-thumbnail" src="https://blackexcellence.com/wp-content/uploads/2019/05/ntipykqjpyl227boqdr5-740x412.jpg" >
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://blackexcellence.com/wp-content/uploads/2019/05/ntipykqjpyl227boqdr5-740x412.jpg" >
+                <div class="overlay">
+                    <a href="https://knowyourmeme.com/memes/confused-nick-young">
+                        <div class="text">Confused Nick Young</div>
+                    </a>
+                </div>
             </Div>
         </div>
+
         <div class="row">
-            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6"> 
-                <img class="img-thumbnail" src="https://i.kym-cdn.com/photos/images/facebook/001/895/436/681.png" >
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://i.kym-cdn.com/photos/images/facebook/001/895/436/681.png" >
+                <div class="overlay">
+                    <a href="#">
+                        <div class="text">a</div>
+                    </a>
+                </div>
             </Div>
-            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6"> 
-                <img class="img-thumbnail" src="https://i.kym-cdn.com/entries/icons/original/000/034/246/Untitled.png" >
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://i.kym-cdn.com/entries/icons/original/000/034/246/Untitled.png" >
+                <div class="overlay">
+                    <a href="#">>
+                        <div class="text">Wide putin</div>
+                    </a>
+                </div>
             </Div>
-            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6"> 
-                <img class="img-thumbnail" src="https://i.kym-cdn.com/entries/icons/facebook/000/022/219/CzIAyuDUAAATE-h.jpg" >
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://i.kym-cdn.com/entries/icons/facebook/000/022/219/CzIAyuDUAAATE-h.jpg" >
+                <div class="overlay">
+                    <a href="#">
+                        <div class="text">Thomas had seen enough</div>
+                    </a>
+                </div>
             </Div>
-            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6"> 
-                <img class="img-thumbnail" src="https://i.kym-cdn.com/entries/icons/facebook/000/035/451/Woo_Yeah_Baby_.jpg" >
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://i.kym-cdn.com/entries/icons/facebook/000/035/451/Woo_Yeah_Baby_.jpg" >
+                <div class="overlay">
+                    <a href="#">
+                        <div class="text">Woo yeah baby</div>
+                    </a>
+                </div>
             </Div>
         </div>
+
+        <div class="row">
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://media1.tenor.com/images/77f57fc5d06dc6642b0d96ef200cb550/tenor.gif?itemid=18482815" >
+                <div class="overlay">
+                    <a href="#">
+                        <div class="text">Vibing cat</div>
+                    </a>
+                </div>
+            </Div> 
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://static.wikia.nocookie.net/dogelore/images/b/bc/Cheems.png/revision/latest?cb=20200729225152" >
+                <div class="overlay">
+                    <a href="#">
+                        <div class="text">Cheems doge</div>
+                    </a>
+                </div>
+            </Div>
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://i.guim.co.uk/img/media/327e46c3ab049358fad80575146be9e0e65686e7/0_0_1023_742/master/1023.jpg?width=300&quality=45&auto=format&fit=max&dpr=2&s=74c827a6625eb7b9bfe31706af9a2cfe" >
+                <div class="overlay">
+                    <a href="#">
+                        <div class="text">Sad pepe</div>
+                    </a>
+                </div>
+            </Div>
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://media.tenor.com/images/a9adda18a785b1cb85eec04517d99178/tenor.gif">
+                <div class="overlay">
+                    <a href="#">
+                        <div class="text">Ricardo Milos</div>
+                    </a>
+                </div>
+            </Div>
+        </div>
+
+        <div class="row">
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://i.kym-cdn.com/entries/icons/original/000/028/431/kirby.jpg" >
+                <div class="overlay">
+                    <a href="#">
+                        <div class="text">Knife kirby</div>
+                    </a>
+                </div>
+            </Div>
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://i.kym-cdn.com/entries/icons/original/000/028/172/sasuke-itachi-naruto-1154016-1280x0.jpeg" >
+                <div class="overlay">
+                    <a href="#">
+                        <div class="text">Sasuke choke</div>
+                    </a>
+                </div>
+            </Div>
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://i.kym-cdn.com/photos/images/newsfeed/001/442/309/4b2.jpg" >
+                <div class="overlay">
+                    <a href="#">
+                        <div class="text">Big chungus</div>
+                    </a>
+                </div>
+            </div>
+            <Div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 container"> 
+                <img class="img-thumbnail center" src="https://i.kym-cdn.com/entries/icons/mobile/000/022/310/isleep.jpg" >
+                <div class="overlay">
+                    <a href="#">
+                        <div class="text">I sleep</div>
+                    </a>
+                </div>
+            </Div>
+        </div>
+
+        <footer>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic deserunt modi quisquam dolores nam, culpa aliquam explicabo. Fugit voluptatibus quasi officia alias? Ut, excepturi odio. Deleniti enim animi neque.
+            </p>
+        </footer>
 </body>
 </html>

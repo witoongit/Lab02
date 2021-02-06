@@ -35,7 +35,7 @@ abbr {
     background-color: pink;
 }
 /*Make <li> adjacent to <h2> red background*/
-li + h2 {
+h2+li {
     background-color: red;
 }
 /*Give <em> inside <p> red and bold*/
